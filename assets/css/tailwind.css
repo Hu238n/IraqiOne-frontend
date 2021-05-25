@@ -1,0 +1,63 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body,
+#__layout,
+#__nuxt {
+  height: 100% !important;
+  direction: rtl !important;
+}
+@font-face {
+  font-family: 'Careem';
+  src: url('../fonts/Careem-Regular.otf');
+}
+@font-face {
+  font-family: 'Careem';
+  src: url('../fonts/Careem-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?a7yuws');
+  src: url('../fonts/icomoon.eot?a7yuws#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?a7yuws') format('truetype'),
+    url('../fonts/icomoon.woff?a7yuws') format('woff'), url('../fonts/icomoon.svg?a7yuws#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clock:before {
+  content: '\e94e';
+}
+.icon-eye:before {
+  content: '\e9ce';
+}
+.icon-plus:before {
+  content: '\ea0a';
+}
+.icon-cross:before {
+  content: '\ea0f';
+}
+.icon-exit:before {
+  content: '\ea14';
+}
+
